@@ -22,19 +22,27 @@ drawpad.grid(row=0, column=1)
 oval = drawpad.create_oval(10, 50, 100, 100, fill='green')
 
 #create_square(top left x,top left y, bottom right x, bottom right y, fill color)
-#this is the base of the house
-
-square = drawpad.create_rectangle(300,300,600,700, fill='red')
-#this square is the upper left window currently
-sq2 = drawpad.create_rectangle(325,325,375,350, fill='black')
-
+#base
+square = drawpad.create_rectangle(100,500,500,300, fill='red')
+#windows
+sq1 = drawpad.create_rectangle(125,400,200,450, fill='white')
+sq2 = drawpad.create_rectangle(400,400,475,450, fill='white')
+sq3 = drawpad.create_rectangle(125,325,200,375, fill='white')
+sq4 = drawpad.create_rectangle(400,325,475,375, fill='white')
+ln1 = drawpad.create_line(162.5,400, 162.5, 450)
+ln2 = drawpad.create_line(162.5,325, 162.5, 375)
+ln3 = drawpad.create_line(437.5,400, 437.5, 450)
+ln4 = drawpad.create_line(437.5,325, 437.5, 375)
+ln5 = drawpad.create_line(125,425, 200, 425)
+ln6 = drawpad.create_line(400,425, 475, 425)
+ln7 = drawpad.create_line(125,350, 200, 350)
+ln8 = drawpad.create_line(400,350, 475, 350)
 
 #create_line(top left x,top left y, bottom right x, bottom right y, fill color)
-
-#this is the line that connects the left part of the house to the top of the roof
-line = drawpad.create_line(300, 300, 450, 100)
-#this is the line that connects the right part of the house to the top of the roof
-line2 = drawpad.create_line(600, 300, 450, 100)
-
+#roof
+line = drawpad.create_line(100, 300, 300, 100)
+line2 = drawpad.create_line(300, 100, 500, 300)
+#door
+door = drawpad.create_rectangle(275,500,325,400, fill='brown')
 root.mainloop()
 
